@@ -24,27 +24,16 @@ nav {
   align-items: center;
   color: #fff;
   display: flex;
-}
 
-nav h1 {
-  display: inline-block;
-  vertical-align: middle;
-}
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: auto;
+    vertical-align: middle;
 
-nav ul {
-  display: inline-block;
-  list-style-type: none;
-  margin-left: auto;
-  vertical-align: middle;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.container {
-  display: block;
-  margin: 0 auto;
-  max-width: 760px;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
 }

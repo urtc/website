@@ -1,0 +1,42 @@
+#team {
+  .row {
+    margin-bottom: 32px;
+
+    .person {
+      box-sizing: border-box;
+      display: inline-block;
+      padding: 0 64px;
+      width: calc(50% - 4px);
+
+      img {
+        border-radius: 16px;
+        width: 100%;
+      }
+
+      figcaption {
+        font-size: 18px;
+        margin-top: 8px;
+        text-align: center;
+
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .person.left {
+      padding-left: 96px;
+      padding-right: 32px;
+    }
+
+    .person.right {
+      padding-left: 32px;
+      padding-right: 96px;
+    }
+
+    .person.center {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

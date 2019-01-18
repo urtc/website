@@ -5,6 +5,7 @@ defaults:
     values:
       animation: false
       layout: default
+      title: MIT URTC 2019
 sass:
   sass_dir: _scss
   style: compressed

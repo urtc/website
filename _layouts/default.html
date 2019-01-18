@@ -15,8 +15,9 @@
   <div id="shield"></div>
   <nav>
     <ul>
-      <li>Dates</li>
-      <li>Team</li>
+      {% for item in site.data.navigation %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endfor %}
     </ul>
   </nav>
   {{ content }}

@@ -33,11 +33,12 @@ function shouldAnimate() {
 }
 
 var animationElement = document.getElementById("animation");
+var shieldElement = document.getElementById("shield");
 var textElement = animationElement.getElementsByTagName("a")[0];
 
 if (!shouldAnimate()) {
   animationElement.classList.add("done-fast");
-  document.getElementById("shield").classList.add("done-fast");
+  shieldElement.classList.add("hidden");
 }
 
 window.onload = function() {
@@ -68,7 +69,11 @@ window.onload = function() {
         setTimeout(function() {
           animationElement.classList.add("done");
 
-          document.getElementById("shield").classList.add("done");
+          shieldElement.classList.add("done");
+
+          setTimeout(function() {
+            shieldElement.classList.add("hidden");
+          }, 500);
         }, 1000);
       }
     }, 150);

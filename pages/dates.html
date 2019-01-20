@@ -2,3 +2,22 @@
 permalink: /dates
 title: Dates
 ---
+<section id="dates">
+  <h1>Important Dates</h1>
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Date</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for date in site.data.dates %}
+        <tr>
+          <td>{{ date.name }}</td>
+          <td>{{ date.date }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>

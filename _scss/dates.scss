@@ -1,0 +1,19 @@
+#dates {
+  table {
+    border-collapse: collapse;
+    display: table;
+    margin: 0 auto;
+
+    thead {
+      tr {
+        border-bottom: 2px solid #fff;
+        border-top: 2px solid #fff;
+        font-weight: 700;
+      }
+    }
+
+    td {
+      padding: 6px 16px;
+    }
+  }
+}

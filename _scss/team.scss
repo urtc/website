@@ -1,15 +1,17 @@
 #team {
-  .row {
-    margin-bottom: 32px;
+  .people {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
 
     .person {
       box-sizing: border-box;
       display: inline-block;
-      padding: 0 64px;
-      width: calc(50% - 4px);
+      max-width: 28%;
+      margin-bottom: 32px;
 
       img {
-        border-radius: 16px;
+        border-radius: 8px;
         width: 100%;
       }
 

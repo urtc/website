@@ -17,10 +17,10 @@ nav, section {
 }
 
 section {
-  padding-top: 16px;
+  padding-top: 0;
 
   h1 {
-    font-size: 42px;
+    font-size: 36px;
     margin-bottom: 24px;
     text-align: center;
   }
@@ -43,6 +43,7 @@ nav {
 
       a {
         color: #fff;
+        font-size: 18px;
         text-decoration: none;
       }
     }

@@ -1,12 +1,16 @@
-- name: Paper Submission Deadline
+- name: Early Paper Submission Deadline
+  date: July 7, 2019
+- name: Early Notification of Acceptance
   date: August 4, 2019
+- name: Regular Paper Submission Deadline
+  date: August 4, 2019
+- name: Regular Notification of Acceptance
+  date: September 8, 2019
 - name: Poster Submission Deadline
-  date: September 1, 2019
+  date: September 8, 2019
 - name: Lightning Talk Submission Deadline
-  date: September 1, 2019
-- name: Paper Acceptance Notifications
+  date: September 8, 2019
+- name: Poster Acceptance Notification
   date: September 15, 2019
-- name: Poster Acceptance Notifications
-  date: September 15, 2019
-- name: Lightning Talk Acceptance Notifications
+- name: Lightning Talk Acceptance Notification
   date: September 15, 2019

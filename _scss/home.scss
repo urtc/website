@@ -1,0 +1,46 @@
+#home {
+  .photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    .photo {
+      &.left {
+        padding-right: 16px;
+      }
+
+      &.right {
+        padding-left: 16px;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }
+
+  a {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    display: table;
+    font-size: 18px;
+    margin: 20px auto 16px;
+    padding: 8px;
+    text-decoration: none;
+    transition: 0.25s ease all;
+  }
+
+  a:hover {
+    background: #fff;
+    color: $background-color;
+  }
+
+  p {
+    font-size: 17px;
+    letter-spacing: 0.01em;
+    line-height: 130%;
+    text-align: justify;
+  }
+}

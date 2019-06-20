@@ -7,14 +7,29 @@
   <title>MIT URTC{% if page.title != "MIT URTC 2019" %} | {{ page.title }}{% endif %}</title>
 </head>
 <body>
-  <div id="animation">
+  <div id="animation" class="desktop">
     <h1>
       <a href="/">MIT URTC</a>
       <div></div>
     </h1>
   </div>
-  <div id="shield"></div>
-  <nav>
+  <div id="shield" class="desktop"></div>
+  <nav class="mobile">
+    <img id="hamburger" src="{{ "/img/icon/hamburger.svg" | relative_url }}" />
+    <h1>
+      <a href="/">MIT URTC</a>
+    </h1>
+  </nav>
+  <div id="mobile-nav" class="hidden">
+    <img id="close" src="{{ "/img/icon/close.svg" | relative_url }}" />
+    <ul>
+      <li><a href="/">Home</a></li>
+      {% for item in site.data.navigation %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <nav class="desktop">
     <ul>
       {% for item in site.data.navigation %}
         <li><a href="{{ item.link }}">{{ item.name }}</a></li>
@@ -25,6 +40,7 @@
   <script type="text/javascript">
     var animation = {{ page.animation }};
   </script>
-  <script src="animation.js"></script>
+  <script src="/js/animation.js"></script>
+  <script src="/js/navigation.js"></script>
 </body>
 </html>

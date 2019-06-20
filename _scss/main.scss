@@ -49,3 +49,9 @@ nav {
     }
   }
 }
+
+@media only screen and (max-width: 760px) {
+  section {
+    padding: 0 32px;
+  }
+}

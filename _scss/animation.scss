@@ -124,3 +124,62 @@
   animation: fadeOut 0.5s ease;
   animation-fill-mode: forwards;
 }
+
+/** Mobile **/
+nav {
+  position: relative;
+
+  h1 {
+    display: table;
+    font-family: "Source Code Pro", monospace;
+    font-size: 32px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  #hamburger {
+    margin-left: 32px;
+  }
+}
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $primary-color;
+  z-index: 100;
+
+  ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+
+    li {
+      text-align: center;
+
+      a {
+        color: #edfaf0;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 42px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  #close {
+    height: 24px;
+    margin: 32px 0 0 32px;
+  }
+}

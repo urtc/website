@@ -16,4 +16,16 @@
       padding: 8px 12px;
     }
   }
+  
+  a {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    display: table;
+    font-size: 18px;
+    margin: 20px auto 16px;
+    padding: 8px;
+    text-decoration: none;
+    transition: 0.25s ease all;
+  }
 }

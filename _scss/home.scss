@@ -1,8 +1,10 @@
 #home {
   .photos {
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    padding-bottom:25px;
 
     .photo {
       &.left {

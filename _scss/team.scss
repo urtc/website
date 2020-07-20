@@ -12,7 +12,9 @@
 
       img {
         border-radius: 8px;
-        width: 100%;
+        width: 50vh;
+        height: 50vh;
+        object-fit: cover;
       }
 
       figcaption {

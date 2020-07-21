@@ -37,7 +37,7 @@
   a:hover {
     background: #fff;
     color: $background-color;
-    text-shadow: 0 0 5px #ff0000;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
   }
 
   p {

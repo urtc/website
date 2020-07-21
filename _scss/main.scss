@@ -46,6 +46,15 @@ nav {
         font-size: 18px;
         text-decoration: none;
       }
+      
+      a.hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      a.hover:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

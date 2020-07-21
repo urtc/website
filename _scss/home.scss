@@ -27,7 +27,7 @@
     border-radius: 4px;
     color: #fff;
     display: table;
-    font-size: 18px;
+    font-size: 20px;
     margin: 20px auto 16px;
     padding: 8px;
     text-decoration: none;
@@ -37,6 +37,7 @@
   a:hover {
     background: #fff;
     color: $background-color;
+    text-shadow: 0 0 5px #ff0000;
   }
 
   p {

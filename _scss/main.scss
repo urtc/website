@@ -4,11 +4,25 @@
 }
 
 html, body {
-  background: $background-color;
+  background: linear-gradient(-45deg,#D0D5F4,#D0F0F4,#82DADC , #D0F4DE);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
   color: #fff;
   font-family: "Lato", Helvetica, sans-serif;
   height: 100%;
   width: 100%;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 nav, section {

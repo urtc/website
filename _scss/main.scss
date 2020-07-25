@@ -26,8 +26,8 @@ html, body {
 }
 
 nav, section {
-  max-width: 760px;
-  padding: 32px calc((100% - 760px) / 2);
+  max-width: 1000px;
+  padding: 32px calc((100% - 1000px) / 2);
 }
 
 section {
@@ -60,20 +60,15 @@ nav {
         font-size: 18px;
         text-decoration: none;
       }
-      
-      a.hover {
-        color: white;
-        text-decoration: none;
-      }
 
-      a.hover:hover {
+      a:hover {
         text-decoration: underline;
       }
     }
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1000px) {
   section {
     padding: 0 32px;
   }

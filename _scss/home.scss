@@ -1,7 +1,12 @@
 #home {
   * {box-sizing: border-box}
   .mySlides1 {display: none}
-  img {vertical-align: middle;}
+  img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+  } 
 
   /* Slideshow container */
   .slideshow-container {
@@ -37,6 +42,7 @@
     background-color: #f1f1f1;
     color: black;
   }
+
   .photos {
     margin-top: 25px;
     display: flex;

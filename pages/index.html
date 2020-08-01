@@ -15,64 +15,75 @@ permalink: /
 -->
 
   <div class="slideshow-container">
-  <div class="mySlides1">
-    <img src="./img/conference/auditorium1.jpg" style="max-width:100%">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 9</div>
+    <img src="./img/conference/auditorium1.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
-    <img src="./img/conference/auditorium2.jpg" style="max-width:100%">
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 9</div>
+    <img src="./img/conference/auditorium2.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
-    <img src="./img/conference/auditorium3.jpg" style="max-width:100%">
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 9</div>
+    <img src="./img/conference/auditorium3.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
-    <img src="./img/conference/presenter1.jpg" style="max-width:100%">
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 9</div>
+    <img src="./img/conference/poster1.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
-    <img src="./img/conference/presenter2.jpg" style="max-width:100%">
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 9</div>
+    <img src="./img/conference/poster2.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
-    <img src="./img/conference/poster1.jpg" style="max-width:100%">
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 9</div>
+    <img src="./img/conference/poster3.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
-    <img src="./img/conference/poster2.jpg" style="max-width:100%">
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 9</div>
+    <img src="./img/conference/poster4.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
-    <img src="./img/conference/poster1.jpg" style="max-width:100%">
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 9</div>
+    <img src="./img/conference/presenter1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 9</div>
+    <img src="./img/conference/presenter2.jpg" style="width:100%">
   </div>
 
 
-  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
   </div>
-
   <script>
-    var slideIndex = [1,1];
-    var slideId = ["mySlides1", "mySlides2"]
-    showSlides(1, 0);
-    showSlides(1, 1);
+    var slideIndex = 0;
+    showSlides();
 
-    function plusSlides(n, no) {
-      showSlides(slideIndex[no] += n, no);
-    }
-
-    function showSlides(n, no) {
+    function showSlides() {
       var i;
-      var x = document.getElementsByClassName(slideId[no]);
-      if (n > x.length) {slideIndex[no] = 1}
-      if (n < 1) {slideIndex[no] = x.length}
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
       }
-      x[slideIndex[no]-1].style.display = "block";
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
-    
+
   </script>
 
   <p>The 2020 IEEE MIT Undergraduate Research Technology Conference (URTC) brings together

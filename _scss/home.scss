@@ -2,11 +2,10 @@
   * {box-sizing: border-box}
   .mySlides1 {display: none}
   img {
-    float: left;
-    width:  100px;
-    height: 100px;
-    object-fit: cover;
-  } 
+    vertical-align: middle;
+    max-width: 100%
+    display:block
+  }
 
   /* Slideshow container */
   .slideshow-container {

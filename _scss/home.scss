@@ -1,18 +1,22 @@
 #home {
   * {box-sizing: border-box;}
   .mySlides {display: none;}
-  img {vertical-align: middle;}
+  
+  img {
+    vertical-align: middle;
+    border-radius: 8px;
+  }
 
   /* Slideshow container */
   .slideshow-container {
     margin-top: 30px;
     position: relative;
-    padding-bottom:30px;
+    padding-bottom:10px;
 
     img{
       border-radius: 8px;
       width: 30vw;
-      height: 30vw;
+      height: 50vw;
       object-fit: cover;
     }
   }
